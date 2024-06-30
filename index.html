@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="https://cdn.jwplayer.com/libraries/IDzF9Zmk.css">
+    <script src="https://cdn.jwplayer.com/libraries/IDzF9Zmk.js"></script>
+</head>
+<body style="background:transparent; margin:0; padding:0;">
+
+<div id="player" style="width:100%; height:100%;"></div>
+
+<script type="text/javascript">
+    jwplayer("player").setup({
+        file: "https://enc1001.tnmr.org/hls2/01/00316/3oscixrptgfm_o/master.m3u8?t=dwoSNwXdJD2N8C80gTS8jK1Y9sLtzQZ7gcJhHdaWDXo&s=1719731704&e=43200&f=1580493&i=0.3&sp=0",
+        image: "https://img.luluvdo.com/3oscixrptgfm_xt.jpg",
+        width: "100%",
+        height: "100%",
+        skin: {
+            name: "seven"
+        },
+        stretching: "uniform",
+        androidhls: true,
+        tracks: [{
+            file: "/srt/empty.srt",
+            label: "Upload captions",
+            kind: "captions"
+        }],
+        captions: { 
+            color: '#FFFFFF', 
+            backgroundColor: '#303030',
+            fontFamily: "Tahoma", 
+            backgroundOpacity: 30, 
+            fontOpacity: '100',
+        },
+        logo: {
+            file: "https://lulustream.com/player/jw8/player-logo.svg",
+            link: "https://lulustream.com"
+        }
+    });
+</script>
+
+</body>
+</html>
